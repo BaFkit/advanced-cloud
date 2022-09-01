@@ -7,6 +7,8 @@
     <modules>
         <module>discovery-service</module>
         <module>product-service</module>
+        <module>front-service</module>
+        <module>api</module>
     </modules>
 
     <parent>
