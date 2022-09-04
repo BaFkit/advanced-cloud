@@ -18,7 +18,6 @@ public class FrontController {
 
     @GetMapping("/products")
     public List<ProductDto> getListProducts() {
-        Object data = restTemplate.getForObject("http://product-service/api/v1/products", Object.class);
-        return (List<ProductDto>) data;
+        return restTemplate.getForObject("http://product-service/api/v1/products", List.class);
     }
 }
